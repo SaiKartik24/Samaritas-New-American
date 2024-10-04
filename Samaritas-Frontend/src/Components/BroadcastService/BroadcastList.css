@@ -1,0 +1,14 @@
+.h2Class {
+    background: #DF7A00;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 20px;
+    color: white;
+    width: 30%;
+    font-weight: 400;
+    font-size: 24px;
+}
+.custom-float-button {
+    background-color: #3C2D79;
+  }
+  

@@ -1,0 +1,98 @@
+:where(.css-dev-only-do-not-override-14i19y2).ant-card .ant-card-body {
+    padding: 0px;
+    border-radius: 0 0 8px 8px;
+}
+
+.cardTitle {
+    border-color: #555;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* .ant-input {
+  border-color: #d9d9d9;
+}
+
+.ant-input:hover,
+.ant-input:focus {
+  border-color: #DF7A00;
+  box-shadow: 0 0 0 2px rgba(223, 122, 0, 0.2);
+}
+
+
+.ant-select {
+  border-color: #d9d9d9;
+}
+
+.ant-select:hover .ant-select-selector,
+.ant-select-focused .ant-select-selector {
+  border-color: #DF7A00;
+  box-shadow: 0 0 0 2px rgba(223, 122, 0, 0.2); 
+}
+
+
+.ant-picker {
+  border-color: #d9d9d9; 
+}
+
+.ant-picker:hover .ant-picker-input,
+.ant-picker-focused .ant-picker-input {
+  border-color: #DF7A00;
+  box-shadow: 0 0 0 2px rgba(223, 122, 0, 0.2); 
+}
+
+
+.ant-btn:hover,
+.ant-btn:focus {
+  border-color: #DF7A00; 
+  box-shadow: 0 0 0 2px rgba(223, 122, 0, 0.2); 
+}
+
+
+:where(.css-dev-only-do-not-override-14i19y2).ant-input-outlined:hover {
+    border-color: #DF7A00;
+    background-color: #ffffff;
+}
+
+:where(.css-dev-only-do-not-override-14i19y2).ant-input-outlined:focus, :where(.css-dev-only-do-not-override-14i19y2).ant-input-outlined:focus-within {
+    border-color: #DF7A00;
+    background-color: #ffffff;
+} */
+
+.h2Class {
+        background: #DF7A00;
+        border-radius: 5px;
+        padding: 2px;
+        padding-left: 20px;
+        color: white;
+        width: 60%;
+        font-weight: 400;
+        font-size: 24px;
+}
+
+:where(.css-dev-only-do-not-override-14i19y2).ant-card .ant-card-head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 56px;
+    margin-bottom: -1px;
+    padding: 0 24px;
+    color: rgba(0, 0, 0, 0.88);
+    font-weight: 600;
+    font-size: 16px;
+    background: transparent;
+     border-bottom: none;
+    border-radius: 8px 8px 8px 8px;
+    border-left: 7px solid #DF7A00;
+}
+
+:where(.css-dev-only-do-not-override-14i19y2).ant-modal .ant-modal-content {
+    display: contents !important;
+}
+
+.msgIcon :hover{
+    color: #DF7A00;
+}
+:where(.css-dev-only-do-not-override-14i19y2).ant-spin-nested-loading >div>.ant-spin .ant-spin-dot {
+  color: #3C2D79;
+  }

@@ -1,0 +1,78 @@
+/* Styles for the user management screen */
+.user-management {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.Heading {
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+    background: rgb(60, 45, 121);
+    border-radius: 5px;
+    text-align: start;
+    padding-left: 20px;
+    margin-left: 37px;
+    margin-right: 37px;
+    padding-bottom: 7px;
+}
+
+.infoClass{
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.Label {
+  font-weight: 400;
+  text-align: start;
+  margin-left: 37px;
+  margin-bottom: -8px;
+}
+
+.table-container {
+  width: 30%;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f0f2f5; /* White background for tables */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 1px solid #ddd; /* Border around the container */
+  min-height: 400px; /* Minimum height to ensure proper display */
+}
+
+.table-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+  color: #3C2D79; /* Dark blue color for headers */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd; /* Border between cells */
+  padding: 12px; /* Padding for cells */
+  text-align: center;
+}
+
+th {
+  background-color: #DF7A00; /* Orange background for table headers */
+  color: #ffffff; /* White text color for headers */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light grey for even rows */
+}
+
+tr:hover {
+  background-color: #eee; /* Light grey background on row hover */
+}
+
+tr {
+  transition: background-color 0.2s ease; /* Smooth transition for hover effect */
+}

@@ -1,0 +1,48 @@
+.agent-details-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+}
+
+:where(.css-dev-only-do-not-override-14i19y2).ant-btn-link {
+    color: #DF7A00;
+}
+.agent-details-card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-left: 8px solid #3C2D79;
+    height:85%
+}
+
+.avatar-container {
+    display: flex;
+   
+    border-right: 2px solid #3C2D79;
+    padding-right: 20px;
+    
+}
+
+.avatar-container .ant-avatar {
+    display: flex;
+    align-items: center;
+    
+}
+
+.details-text {
+    flex: 1;
+}
+
+.history-card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-left: 8px solid #3C2D79;
+}
+
+.ant-timeline-item-content {
+    color: #DF7A00;
+}
