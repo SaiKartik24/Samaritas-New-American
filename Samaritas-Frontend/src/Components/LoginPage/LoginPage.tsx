@@ -30,7 +30,7 @@ function LoginPage() {
 
         axios
           //  .post('https://newamericans-demo-h3a4aqbsh6asemcp.eastus2-01.azurewebsites.net/users/Login', obj)
-          .post('http:localhost:3002/users/Login', obj) 
+          .post('/users/Login', obj) 
           .then((response: any) => {
                 if (
                     response.data.statusCode === 200 &&
