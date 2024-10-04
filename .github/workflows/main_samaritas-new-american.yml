@@ -22,7 +22,6 @@ jobs:
     - name: Install and build frontend
       working-directory: ./Samaritas-Frontend
       run: |
-        npm cache clean --force
         npm install
         npm run build
     # List the contents of the frontend build folder to verify the build
