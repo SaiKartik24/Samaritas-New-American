@@ -25,9 +25,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(cors());
 
-app.use(express.static(path.resolve(__dirname, "../Samaritas-Frontend/build")));
+app.use(express.static(path.resolve(__dirname, 'Samaritas-Frontend/build')));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../Samaritas-Frontend/build/index.html"));
+  res.sendFile(path.join(__dirname, 'Samaritas-Frontend/build','index.html'));
 });
 
 // Your routes and other middleware
