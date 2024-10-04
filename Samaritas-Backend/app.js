@@ -25,9 +25,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(cors());
 
-app.use(express.static(path.resolve(__dirname, "build")));
+app.use(express.static(path.resolve(__dirname, "Samaritas-Frontend/build")));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build/index.html"));
+  res.sendFile(path.join(__dirname, "Samaritas-Frontend/build/index.html"));
 });
 
 // Your routes and other middleware
@@ -72,10 +72,10 @@ app.use((err, req, res, next) => {
 });
 
 
-app.use(cors({
-  origin: 'https://newamericans-demo-h3a4aqbsh6asemcp.eastus2-01.azurewebsites.net',
-  credentials: true,
-}));
+// app.use(cors({
+//   origin: 'https://newamericans-demo-h3a4aqbsh6asemcp.eastus2-01.azurewebsites.net',
+//   credentials: true,
+// }));
 
 
 app.use(function(err, req, res, next) {
