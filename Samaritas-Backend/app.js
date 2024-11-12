@@ -72,32 +72,11 @@ app.use((err, req, res, next) => {
       message: err.message || 'Internal server error',
   });
 });
-app.get('/get-secrets', async (req, res) => {
-  // Check if the 'names' query parameter is provided
-  if (!req.query.names) {
-      return res.status(400).send('Missing query parameter: names. Please provide a comma-separated list of secret names.');
-  }
 
-  const secretNames = req.query.names.split(','); // Expecting names as a comma-separated list
-  const secrets = {};
+app.get("/api/ping", (req, res) => {
+  res.send("Vault Api")
+  });
 
-  for (const name of secretNames) {
-      try {
-          const secret = await client.getSecret(name);
-          secrets[name] = secret.value;
-      } catch (error) {
-          console.error(`Failed to get secret ${name}:`, error.message);
-          secrets[name] = null; // or handle differently if needed
-      }
-  }
-
-  res.status(200).json(secrets);
-});
-
-// app.use(cors({
-//   origin: 'https://newamericans-demo-h3a4aqbsh6asemcp.eastus2-01.azurewebsites.net',
-//   credentials: true,
-// }));
 // Azure Key Vault setup
 const credential = new DefaultAzureCredential();
 const client = new SecretClient(`https://na-s.vault.azure.net/`, credential);
