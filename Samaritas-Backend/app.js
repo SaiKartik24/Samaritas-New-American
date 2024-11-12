@@ -98,7 +98,6 @@ app.get('/get-secrets', async (req, res) => {
 //   origin: 'https://newamericans-demo-h3a4aqbsh6asemcp.eastus2-01.azurewebsites.net',
 //   credentials: true,
 // }));
-
 // Azure Key Vault setup
 const credential = new DefaultAzureCredential();
 const client = new SecretClient(`https://na-s.vault.azure.net/`, credential);
@@ -142,7 +141,7 @@ app.post('/set-secret', async (req, res) => {
       res.status(500).send(`Failed to set secret: ${error.message}`);
   }
 });
-
+//AZUR-VAULT END
 
 app.use(function(err, req, res, next) {
   console.error('Error details:', {
